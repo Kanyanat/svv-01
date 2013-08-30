@@ -18,6 +18,7 @@ import static org.junit.Assert.*;
 public class CheckTriTest {
     
     public CheckTriTest() {
+        
     }
     
     @BeforeClass
@@ -44,10 +45,27 @@ public class CheckTriTest {
         System.out.println("checkTriType");
         int p = 0;
         int q = 0;
-        String expResult = "";
-        String result = CheckTri.checkTriType(p, q);
-        assertEquals(expResult, result);
+        //String expResult = "";
+        //String result = CheckTri.checkTriType(p, q);
+        //assertEquals(expResult, result);
+        System.out.println("Let Test");
+        int a[] = {5,6,4,0};
+        int b[] = {5,6,5,5};
+        int c[] = {5,5,6,0};
+        
+        String output[] = {"Equilateral Triangle","Isosceles Triangle","Scalene","Invalid"};
+        
+        for(int i=0; i <= output.length-1;i++){
+            String result = CheckTri.checkTriType(a[i],b[i],c[i]);
+            System.out.print("It is "+result);
+            if (result == output[i]){
+                System.out.println("-->> True");
+            }
+            else{
+                System.out.println("-->> False");
+            }
+        }
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 }
