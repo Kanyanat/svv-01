@@ -12,6 +12,9 @@ public class CheckTri {
                 triTypeString = "Isosceles Triangle";
             else if (a != b && b != c && a != c) 
                 triTypeString = "Scalene";
+                if((a^2)+(b^2)>(c^2) || (a^2)+(c^2)>(b^2) || (b^2)+(c^2)>(a^2))
+                    triTypeString = "Invalid!!!";
+                
             else
                 triTypeString = "Invalid!!!";
         }
