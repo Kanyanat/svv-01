@@ -53,7 +53,7 @@ public class CheckTriTest {
         int b[] = {5,6,5,5};
         int c[] = {5,5,6,0};
         
-        String output[] = {"Equilateral Triangle","Isosceles Triangle","Scalene","Invalid"};
+        String output[] = {"Equilateral Triangle","Isosceles Triangle","Scalene","Invalid!!!"};
         
         for(int i=0; i <= output.length-1;i++){
             String result = CheckTri.checkTriType(a[i],b[i],c[i]);
